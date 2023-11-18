@@ -1,3 +1,7 @@
+# SyncWithPride-FrontEnd
+This is an application providing Desktop Slot Booking services for Students to Practice at Pride
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).

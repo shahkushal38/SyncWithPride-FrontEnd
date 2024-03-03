@@ -1,0 +1,236 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+}
+
+.login-container {
+  background-image: url(./bg_pc.png);
+  /* image-resolution: inherit; */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-clip: inherit;
+  background-position: 0px -7rem;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  box-sizing: border-box;
+  font-size: larger;
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.login {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 65%;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  /* align-items: center; */
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  position: relative;
+}
+
+.login {
+  margin-top: 4rem;
+  background-color: #698fc7;
+  padding: 2rem;
+  width: 388px;
+  border-radius: 10px;
+}
+
+.login-text {
+  padding-bottom: 3px;
+  border-bottom: 4px solid #0368ff;
+  /* border-radius: 50px; */
+  display: inline;
+  width: 100%;
+}
+
+.input[type="text"],
+.input[type="password"],
+.submit {
+  /* width: 100%; */
+  padding: 12px;
+  border: 1px solid #fff;
+  border-radius: 4px;
+  outline: none;
+}
+
+.me {
+  display: flex;
+  /* flex-wrap: nowrap; */
+  justify-content: flex-start;
+  font-size: medium;
+  /* gap: 5px; */
+  margin-left: 0.8rem;
+}
+
+.submit {
+  border: none;
+  cursor: pointer;
+  background-color: #004bbc;
+  border-radius: 50px;
+  color: white;
+  font-style: inherit;
+  font-size: large;
+}
+
+.usericon {
+  position: absolute;
+  width: 1.9rem;
+  right: 8px;
+  top: 4rem;
+  border: none;
+  color: black;
+}
+
+.lock {
+  position: absolute;
+  width: 2rem;
+  right: 7.7px;
+  top: 7.9rem;
+  border: none;
+  color: black;
+  cursor: pointer;
+}
+
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 20%;
+  margin-left: 8rem;
+}
+
+.input:focus {
+  outline: none;
+  border-color: none;
+  box-shadow: 0 0 10px #9ecaed, 
+              0 0 10px #9ecaed,
+              0 0 10px #9ecaed, 
+              0 0 10px #9ecaed;
+}
+
+.input {
+  width: 20rem ;
+  text-align: start;
+}
+
+.input-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 21rem;
+}
+
+@media screen and (max-width: 450px) {
+  .login-container {
+    background-image: url(./bg_phone.png);
+    image-resolution: inherit;
+    background-repeat: no-repeat;
+    /* background-clip: inherit; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+    font-size: larger;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+  }
+
+  .input-container{
+    width: 17rem;
+  }
+
+  .login-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+  }
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    /* gap: 1rem; */
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    position: relative;
+  }
+
+  .login-text {
+    padding-bottom: 3px;
+    border-bottom: 4px solid #0368ff;
+    /* border-radius: 50px; */
+    display: inline;
+    width: 100%;
+  }
+
+  .input[type="text"],
+  .input[type="password"],
+  .submit {
+    /* width: 100%; */
+    padding: 12px;
+    border: 1px solid #fff;
+    border-radius: 4px;
+    outline: none;
+  }
+
+  .me {
+    display: flex;
+    /* flex-wrap: nowrap; */
+    justify-content: flex-start;
+    font-size: small;
+    /* gap: 5px; */
+  }
+
+  .login {
+    margin-top: 2rem;
+    background-color: #698fc7;
+    padding: 2rem;
+    width: 100%;
+    border-radius: 10px;
+    outline: 2px solid #ccc;
+    width: 79%;
+    margin-right: 0rem;
+  }
+
+  .head {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    width: 20%;
+    margin-left: 6.5rem;
+  }
+
+  .submit {
+    border-radius: 10px;
+  }
+}

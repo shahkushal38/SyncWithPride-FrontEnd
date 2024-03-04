@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./login.css";
+import "./Login.css";
 import UsernameIcon from "./username_icon.png";
 import lock from "./password.png";
 

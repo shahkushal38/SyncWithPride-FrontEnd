@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+}
+
+.main2 {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  /* padding: 1rem; */
+  /* gap: 1rem; */
+  position: absolute;
+  bottom: 0px;
+  z-index: 1;
+  backdrop-filter:  blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.gateway {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 2rem;
+  border: none;
+  background-color: #62c1e9;
+  border-radius: 30px 30px 0px 0px;
+  -webkit-border-radius: 30px 30px 0px 0px;
+  -moz-border-radius: 30px 30px 0px 0px;
+  -ms-border-radius: 30px 30px 0px 0px;
+  -o-border-radius: 30px 30px 0px 0px;
+  margin-top: 15rem;
+  flex-wrap: nowrap;
+  flex-direction: column;
+  width: 60%;
+  height: 70%;
+}
+
+.btn3 {
+  color: black;
+  font-size: 21px;
+  font-weight: 500;
+  padding: 0.5rem;
+  border: none;
+  background-color: #62c1e9;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  background-color: white;
+  padding: 1rem 2rem;
+  cursor: pointer;
+}
+
+.buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  text-align: center;
+}
+
+span {
+  color: #ffc85f;
+  border-bottom: 2px solid #ffc85f;
+}
+
+.title,
+.addr1,
+.status {
+  color: black;
+  font-size: 21px;
+  font-weight: 500;
+  padding: 0.5rem;
+  border: none;
+}
+
+.info1,
+.head2 {
+  text-align: center;
+}
+
+.addr1,
+.info1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.head2 {
+  padding-top: 1rem;
+}
+
+.tsx {
+  margin-left: 4rem;
+}
+
+.status {
+  margin-left: 0rem;
+}
+
+.title {
+  font-size: 25px;
+  border-top: 2px solid white;
+}
+
+.book {
+  background-color: #0093d3;
+}
+
+@media screen and (max-width: 450px) {
+  .gateway {
+    width: 70%;
+    height: 65%;
+  }
+  .buttons {
+    margin-top: 2rem;
+  }
+}

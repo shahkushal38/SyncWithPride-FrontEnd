@@ -1,0 +1,105 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  outline: none;
+  border: none;
+}
+
+.back {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  font-size: 24px;
+  top: 2rem;
+  left: 2rem;
+  width: 2.5rem;
+  height: 2.5rem;
+  cursor: pointer;
+  border: 2px solid black;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+
+.Booking-main {
+  width: 100%;
+  min-height: 50rem;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 1rem;
+  gap: 1rem;
+  background: linear-gradient(to right, #e6f5ff, #3498db);
+  /* background: linear-gradient(#e6f5ff, #3498db); */
+}
+
+.section {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1rem;
+  width: 90%;
+  height: 100vh;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  background-color: #98cfe1;
+  border: none;
+  border-radius: 30px;
+  -webkit-border-radius: 30px;
+  -moz-border-radius: 30px;
+  -ms-border-radius: 30px;
+  -o-border-radius: 30px;
+  width: 40%;
+  right: 1rem;
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.detail {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* h2{
+  margin-right: 67px;
+} */
+
+p {
+  color: #333;
+  font-size: 20px;
+  font-weight: 500;
+  pointer-events: none;
+}
+
+@media screen and (max-width: 450px) {
+  .first {
+    width: 80%;
+    margin-top: 5rem;
+  }
+  .info {
+    width: 80%;
+    padding: 1.5rem;
+  }
+  .Booking-main {
+    background: linear-gradient(to right, #e6f5ff, #3498db);
+    /* transform: rotate(3deg); */
+  }
+}

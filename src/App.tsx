@@ -1,8 +1,9 @@
 import React from "react";
 // import "./App.css";
 import { Login } from "./Component/Login-Component/Login";
-import { Aboutus } from "./Component/AboutUs/Aboutus";
+import { Profile } from "./Component/Profile/Profile";
 import { Mainpage } from "./Component/MainPage/Mainpage";
+import { Aboutus } from "./Component/AboutUs/Aboutus";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/Aboutus" element={<Aboutus />} /> 
 
           {/* 
+
             This Is Main Page,
             i did't reseved Date and Time picker so,
             i added a demo date picker that draw the line how things working 
@@ -35,6 +37,7 @@ function App() {
 
           */}
           <Route path="/Mainpage" element={<Mainpage />} />
+          <Route path="/Profile" element={<Profile />} />
         </Routes>
       </Router>
     </div>

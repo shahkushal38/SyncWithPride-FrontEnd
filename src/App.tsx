@@ -5,6 +5,7 @@ import { Profile } from "./Component/Profile/Profile";
 import { Mainpage } from "./Component/MainPage/Mainpage";
 import { Gateway } from "./Component/Gateway/Gateway";
 import { Aboutus } from "./Component/AboutUs/Aboutus";
+import { Booking } from "./Component/BookingHistory/Booking";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
 function App() {
@@ -40,6 +41,7 @@ function App() {
           <Route path="/Mainpage" element={<Mainpage />} />
           <Route path="/Profile" element={<Profile />} />
           <Route path="/Gateway" element={<Gateway />} />
+          <Route path="/Booking" element={<Booking />} />
         </Routes>
       </Router>
     </div>

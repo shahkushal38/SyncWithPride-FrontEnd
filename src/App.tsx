@@ -3,6 +3,7 @@ import React from "react";
 import { Login } from "./Component/Login-Component/Login";
 import { Profile } from "./Component/Profile/Profile";
 import { Mainpage } from "./Component/MainPage/Mainpage";
+import { Gateway } from "./Component/Gateway/Gateway";
 import { Aboutus } from "./Component/AboutUs/Aboutus";
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
@@ -38,6 +39,7 @@ function App() {
           */}
           <Route path="/Mainpage" element={<Mainpage />} />
           <Route path="/Profile" element={<Profile />} />
+          <Route path="/Gateway" element={<Gateway />} />
         </Routes>
       </Router>
     </div>

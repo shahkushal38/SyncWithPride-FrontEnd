@@ -1,16 +1,29 @@
-import React from "react";
-// import "./App.css";
-import { Login } from "./Component/Login-Component/Login";
-import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import React, { useEffect } from "react";
+import {Login}  from "./Component/Login-Component/Login";
+
+import { Route, Routes, useNavigate } from "react-router-dom";
+import { useToken } from "./Component/useToken/useToken";
 
 function App() {
+  const {getToken, saveToken } = useToken();
+  const navigate   = useNavigate();
+
+  useEffect(() => {
+    if (!getToken()) {
+      navigate("/");
+    }
+  },[getToken, navigate])
+  
+
   return (
     <div className="App">
-      <Router>
+      
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element= {<Login setToken={saveToken}/>}/>
+          <Route path="/mainpage" element={<><p>this is main page</p></>} />
         </Routes>
-      </Router>
+        
+      
     </div>
   );
 }

@@ -11,7 +11,6 @@
 
 .login-container {
   background-image: url(./bg_pc.png);
-  /* image-resolution: inherit; */
   background-repeat: no-repeat;
   background-size: cover;
   background-clip: inherit;
@@ -40,7 +39,6 @@
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  /* align-items: center; */
   justify-content: center;
   text-align: center;
   width: 100%;
@@ -57,8 +55,7 @@
 
 .login-text {
   padding-bottom: 3px;
-  border-bottom: 4px solid #0368ff;
-  /* border-radius: 50px; */
+  border-bottom: 4px solid #0368ff; 
   display: inline;
   width: 100%;
 }
@@ -66,7 +63,7 @@
 .input[type="text"],
 .input[type="password"],
 .submit {
-  /* width: 100%; */
+ 
   padding: 12px;
   border: 1px solid #fff;
   border-radius: 4px;
@@ -74,8 +71,7 @@
 }
 
 .me {
-  display: flex;
-  /* flex-wrap: nowrap; */
+  display: flex; 
   justify-content: flex-start;
   font-size: medium;
   /* gap: 5px; */
@@ -145,8 +141,7 @@
   .login-container {
     background-image: url(./bg_phone.png);
     image-resolution: inherit;
-    background-repeat: no-repeat;
-    /* background-clip: inherit; */
+    background-repeat: no-repeat;    
     display: flex;
     align-items: center;
     justify-content: center;
@@ -175,9 +170,7 @@
 
   .form {
     display: flex;
-    flex-direction: column;
-    /* gap: 1rem; */
-    /* align-items: center; */
+    flex-direction: column;  
     justify-content: center;
     text-align: center;
     width: 100%;
@@ -186,8 +179,7 @@
 
   .login-text {
     padding-bottom: 3px;
-    border-bottom: 4px solid #0368ff;
-    /* border-radius: 50px; */
+    border-bottom: 4px solid #0368ff;    
     display: inline;
     width: 100%;
   }
@@ -195,7 +187,6 @@
   .input[type="text"],
   .input[type="password"],
   .submit {
-    /* width: 100%; */
     padding: 12px;
     border: 1px solid #fff;
     border-radius: 4px;
@@ -204,10 +195,9 @@
 
   .me {
     display: flex;
-    /* flex-wrap: nowrap; */
     justify-content: flex-start;
     font-size: small;
-    /* gap: 5px; */
+    
   }
 
   .login {

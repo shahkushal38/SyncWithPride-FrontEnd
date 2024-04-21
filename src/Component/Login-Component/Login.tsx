@@ -1,6 +1,6 @@
 import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
-import "./login.css";
+import "./Login.css";
 import UsernameIcon from "./username_icon.png";
 import lock from "./lock.png";
 import axios from "axios";
@@ -50,7 +50,7 @@ export function Login(props: ILogin): JSX.Element {
     })
 
 
-  },[login, setToken, password])
+  },[login, password, setToken, navigate])
 
   return (
     <div className="login-container">

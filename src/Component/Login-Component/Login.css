@@ -95,6 +95,7 @@
   top: 4rem;
   border: none;
   color: black;
+  cursor: pointer;
 }
 
 .lock {

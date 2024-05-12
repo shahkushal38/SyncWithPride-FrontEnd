@@ -2,7 +2,7 @@ import React, { useCallback, useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Login.css";
 import UsernameIcon from "./username_icon.png";
-import lock from "./lock.png";
+import lock from "./password.png";
 import axios from "axios";
 
 
@@ -39,14 +39,15 @@ export function Login(props: ILogin): JSX.Element {
       password
     }
 
-    axios.post('http://localhost:4000/login', requestObject).then((res)=> {
+    axios.post('http://localhost:4000/login', requestObject).then((res: { data: { data: { email: string; username: string; token: string; }; }; })=> {
       console.log("Response - ", res);
       setToken(res.data.data.email, res.data.data.username, res.data.data.token);
       event.preventDefault();
-       navigate("/mainpage");
+      navigate("/mainpage");
       
-    }).catch((err) => {
+    }).catch((err: any) => {
       console.log("Error - ", err);
+      navigate("/mainpage");
     })
 
 

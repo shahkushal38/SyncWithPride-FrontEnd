@@ -1,0 +1,22 @@
+.slot-picker-container {
+    margin-bottom: 20px;
+  }
+  
+  .slot-picker-container select {
+    padding: 5px;
+    font-size: 16px;
+  }
+  
+  .slot-picker-container button {
+    margin-left: 10px;
+    padding: 5px 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    cursor: pointer;
+  }
+  
+  .slot-picker-container button:hover {
+    background-color: #0056b3;
+  }
+  
